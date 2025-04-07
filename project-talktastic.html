@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Machine Learning and Data Visualization Solutions, senior Full-Stack Software Engineer specializing in web app development, data visualization, backend solutions, and automation. Experienced in AI, Solar Energy, and more.">
+    <title>Machine Learning and Data Visualization Solutions | Senior Full-Stack Software Engineer Portfolio</title>
+    <meta property="og:title" content="Machine Learning and Data Visualization Solutions | Senior Full-Stack Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Machine Learning and Data Visualization Solutions, senior Full-Stack Software Engineer specializing in web app development, data visualization, backend solutions, and automation. Experienced in AI, Solar Energy, and more.">
+    <link rel="canonical" href="https://ml-and-data-viz.github.io/index.html">
+    <meta property="og:url" content="https://ml-and-data-viz.github.io/index.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link href="css/project.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script src="js/header.js"></script>
+    <script src="js/custom_footer.js"></script>
+    <link href="css/custom_footer.css" rel="stylesheet">
+    <script>
+        var projectJson = {
+            "logo_source": "images/logos/talktastic_icon.webp",
+            "project_title": "Sync Labs",
+            "project_summary": "In this project I built the backend from scratch. The client was building a Mac App that would allow users to run it and talk, and get their audios transcribed. The main interesting thing about this project was that to transcribe the audio, we first took a screenshot " + 
+                                "of the computer screen, sent it to an AI (Claude) for analysis, and then we sent the transcription together with the " + 
+                                "screenshot's analysis to another LLM (GPT). This way we could get a more accurate transcription than plain speech-to-text, " + 
+                                "and even edit it to match the calculated format according to the screen. " + 
+                                "For example, a common use case was people that sent a lot of Slack messages, we would catch the names to whom the " +
+                                "message was being sent, and the previous messages from the conversation, and that way the LLM understood for example if the text " +
+                                "should be formal or not, the structure, and spelled correctly even uncommon names that were mentioned in the audio.",
+            "project_overview_paragraphs": [
+                    "First, users need to register and validate their email.",
+                    "When a user started recording, the App would take the screenshot and post it to the backend. Then, the backend would send the screenshot to Claude (as a background job, asynchronic), and get the analysis back.",
+                    "After both the screenshot was analyzed and then recording was finished and posted to the backend (together " + 
+                    "with Apple's speech-to-text transcription), the backend sent different prompts to different LLM models (generally openai). " + 
+                    "The prompts were to get the AI to understand the context of the conversation together with the initial transcription, " + 
+                    "and then return a more accurate transcription.",
+                    "Websockets were used so that the user could see the transcription in real time."
+            ],
+            "tech_stack": [
+                ["Backend", "Python, Django, DRF, Celery, Websockets, OpenAI sdk"],
+                ["Postgresql", "Infra"],
+                ["Docker, Google Cloud Platform, RabbitMQ, Github Actions (test coverage: 89%)"]
+            ],
+            project_images: [
+                "images/talktastic-project/talktastic-project-1.png",
+                "images/talktastic-project/talktastic-project-2.png",
+            ]
+        };
+    </script>
+    <script src="js/project-loader.js"></script>
+</head>
+
+<body>
+    <script type="text/jsx" src="index.js"></script>
+    <custom-header></custom-header>
+    <main id="projectDescriptionMain">
+    </main>
+    <custom-footer></custom-footer>
+</body>
+
+</html>

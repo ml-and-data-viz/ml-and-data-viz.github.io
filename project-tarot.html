@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Machine Learning and Data Visualization Solutions, senior Full-Stack Software Engineer specializing in web app development, data visualization, backend solutions, and automation. Experienced in AI, Solar Energy, and more.">
+    <title>Machine Learning and Data Visualization Solutions | Senior Full-Stack Software Engineer Portfolio</title>
+    <meta property="og:title" content="Machine Learning and Data Visualization Solutions | Senior Full-Stack Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Machine Learning and Data Visualization Solutions, senior Full-Stack Software Engineer specializing in web app development, data visualization, backend solutions, and automation. Experienced in AI, Solar Energy, and more.">
+    <link rel="canonical" href="https://ml-and-data-viz.github.io/index.html">
+    <meta property="og:url" content="https://ml-and-data-viz.github.io/index.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link href="css/project.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script src="js/header.js"></script>
+    <script src="js/custom_footer.js"></script>
+    <link href="css/custom_footer.css" rel="stylesheet">
+    <script>
+        var projectJson = {
+            "logo_source": "images/logos/tarot_logo_2.webp",
+            "project_title": "Tarot reading Web App",
+            "project_summary": 'In this project the client wanted a web application to allow users to register and create different requests for tarot card readings. Also, non-subscribed users could request one-time 1, 3 or 5-card readings, and also ask for a "rush" reading, that would be done in less than 24 hours.',
+            "project_overview_paragraphs": [
+                "First, users need to register in the system. For this, they needed to choose between a monthly or annual " +
+                "subscription (they could pause it later but my client wanted this mandatory). " +
+                "They would be asked for their credit card information which was processed by Stripe to create the subscription.",
+                "Once registered, they could pause or cancel the subscription, and ask for one-time tarot reading. " +
+                "The reading could be pushed if the user paid more, and their request would be prioritized in the backend so that the frontend would know which to show first " +
+                "to the tarot readers. Users had a dashboard with their requests like different conversations with the psychics, and would be notified upon receiving a new message.",
+                "Selenium tests were developed so that we would automatically test the frontend changes."
+            ],
+            "tech_stack": [
+                ["Backend", "Python, Django, Selenium, Stripe, OpenAI sdk"],
+                ["Database", "Postgresql"],
+                ["Infrastructure", "Azure, Github Actions"],
+            ],
+            project_images: [
+                "images/tarot-project/tarot-project-1.png",
+                "images/tarot-project/tarot-project-2.png"
+            ]
+        };
+    </script>
+    <script src="js/project-loader.js"></script>
+</head>
+
+<body>
+    <script type="text/jsx" src="index.js"></script>
+    <custom-header></custom-header>
+    <main id="projectDescriptionMain">
+    </main>
+    <custom-footer></custom-footer>
+</body>
+
+</html>

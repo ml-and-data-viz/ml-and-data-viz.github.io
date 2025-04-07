@@ -1,0 +1,194 @@
+#pictureDiv {
+    min-width: 40%;
+    width: 40%;
+    display: flex;
+}
+
+
+#hiH2 {
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    margin: auto;
+    height: 7vh;
+    font-size: 40px;
+    padding: 0 0 0 0;
+    color: var(--variableFontColor);
+}
+
+.personalInfoSection {
+    display: flex;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 15vh;
+    width: 100%;
+}
+
+.aboutDivClass {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 3vh;
+    width: auto;
+    margin-top: 3vh;
+    border-top: 1px solid;
+}
+
+.aboutDescriptionDiv {
+    display: flex;
+}
+
+#aboutTextDiv {
+    display: grid;
+    width: 60%;
+    row-gap: 15px;
+}
+
+p {
+    text-align: justify;
+    color: var(--variableFontColor);
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+#iconsDiv,
+#mailDiv {
+    text-align: center;
+    margin-top: 1vh;
+}
+
+#mailDiv {
+    margin-top: -50px;
+}
+
+.link_with_icon {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 2em;
+    font-size: 1.3vw;
+}
+
+.fa-gmail {
+    content: url('../images/gmail.svg');
+    height: 24px;
+    width: 24px;
+}
+
+#techLeft,
+#techMiddle,
+#techRight {
+    display: inline-block;
+    width: 33%;
+}
+
+#techMiddle {
+    padding-left: 3%;
+}
+
+.aboutLabelTitle {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 2vh;
+    margin-top: 0;
+}
+
+.aboutLabelSubtitle {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.aboutLabelSubSubtitle {
+    font-size: 0.7em;
+    margin-top: 0;
+}
+
+@media (max-width: 1100px) {
+    #pictureDiv {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .personalInfoSection {
+        display: block;
+        padding-top: 15vh;
+        font-size: 1em;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .personalInfoSection p {
+        margin-top: 10px;
+    }
+
+    #aboutTextDiv {
+        row-gap: 3vh;
+        width: 100%;
+    }
+
+    #aboutTextDiv p {
+        font-size: 0.9em;
+        font-weight: lighter;
+    }
+
+    #h2Div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #hiH2 {
+        height: 30px;
+        font-size: 8vw;
+    }
+
+    .link_with_icon {
+        font-size: 4.5vw;
+    }
+
+    #mailDiv {
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 7vh;
+    }
+
+    .aboutDivClass {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding-top: 5vh;
+        margin-top: 40px;
+        border-top: 2px solid;
+    }
+
+    #techLeft,
+    #techMiddle,
+    #techRight {
+        display: grid;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    #techMiddle {
+        padding-left: 0;
+    }
+
+    .aboutDescriptionDiv {
+        display: block;
+        margin-top: 3vh;
+        line-height: 40px;
+    }
+
+    .aboutLabelSubtitle {
+        font-size: 0.9em;
+        margin-bottom: 0px;
+    }
+
+    .aboutLabelSubSubtitle {
+        font-size: 0.7em;
+        margin-bottom: 20px;
+    }
+
+    .aboutLabelTitle {
+        font-size: 1.2em;
+    }
+}
